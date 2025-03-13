@@ -1,0 +1,95 @@
+
+.scrollable-page {
+    min-height: 100vh; 
+    /*height: 100%; /* or min-height: 100vh; */
+    overflow-y: scroll; /* Only this page will scroll vertically */
+}
+
+
+.back{
+    width: 107.36px;
+    height: 40.15px;
+    position: absolute;
+    left: 86px;
+    top: 10px;
+    border: 1px solid rgb(206, 196, 7);
+    border-radius: 72.62px;
+    background-color: rgb(206, 196, 7);
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: helvetica;
+    color: #4f4f4f;
+}
+
+.rec{
+    position: relative;
+    left: 40px;
+    top: -704px;
+}
+
+.rec1{
+    position: relative;
+    left: 350px;
+    top: -736px;
+    width: 777px;
+}
+
+#header{
+    Font-size: 48.41px;
+    font-family: serif;
+    color: #4F4F4F;
+    position: absolute;
+    left: 359px;
+    top: 91px;
+    text-align: center;
+    font-weight: 50;
+}
+
+.img{
+    position: relative;
+    z-index: 10;
+    left: 881px;
+    height: 419px;
+    top: 145px;
+}
+
+.biz{
+    width: 380.04px;
+    height: 35.1px;
+    position: absolute;
+    left: 363px;
+    top: 282px;
+    background-color: #FEFFCC;
+    border: 1px solid rgb(206, 196, 7);
+    margin-bottom: 0;
+    padding-top: 1px;
+    border-radius: 72.62px;
+    font-family: helvetica;
+    font-size: 19px;
+    padding-left: 19px;
+}
+
+.search{
+    width: 131.36px;
+    height: 41.15px;
+    position: absolute;
+    left: 502px;
+    top: 339px;
+    border: 1px solid rgb(206, 196, 7);
+    border-radius: 72.62px;
+    background-color: #FEFFCC;
+    margin-top: 20px;
+    font-family: helvetica;
+    font-size: 20px;
+    color: #4f4f4f;
+}
+
+.note{
+    text-align: center;
+    font-size: 22px;
+    font-family: helvetica;
+    color: #ac1919;
+    position: absolute;
+    top: 628px;
+    left: 604px;
+}

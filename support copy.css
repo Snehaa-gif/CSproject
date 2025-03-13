@@ -1,0 +1,130 @@
+/*body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Sets the minimum height of the body to the full viewport height */
+  /*  overflow-x: hidden; /* Prevents horizontal scrolling */
+   /* overflow-y: auto; /* Allows vertical scrolling if needed */
+/*}*/
+
+.scrollable-page {
+    height: 100%; /* or min-height: 100vh; */
+    overflow-y: auto; /* Only this page will scroll vertically */
+}
+
+.back{
+    width: 107.36px;
+    height: 40.15px;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    border: 1px solid rgb(206, 196, 7);
+    border-radius: 72.62px;
+    background-color: rgb(206, 196, 7);
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: helvetica;
+    color: #4f4f4f;
+}
+
+#support{
+    Font-size:94.41px;
+    font-family:serif;
+ /* text-align:center;*/
+    /*padding-left:1228.93px;
+    padding-top:335px;*/
+    color:#4F4F4F;
+    position:absolute;
+    left:156px;
+    top:40px;
+    text-align: center;
+    font-weight:lighter;
+}
+
+#short{
+    Font-size:26.41px;
+    font-family:Helvetica, sans-serif;
+ /* text-align:center;*/
+    /*padding-left:1228.93px;
+    padding-top:335px;*/
+    color:#4F4F4F;
+    position:absolute;
+    left:162px;
+    top:217px;
+    text-align: center;
+    font-weight:lighter;
+}
+
+#long{
+    Font-size:26.41px;
+    font-family:Helvetica, sans-serif;
+    text-align:left;
+    /*padding-left:1228.93px;
+    padding-top:335px;*/
+    color:#4F4F4F;
+    position:absolute;
+    left:162px;
+    top:483px;
+    font-weight:lighter;
+}
+
+#img{
+    position: absolute;
+    left:369px;
+    top:232px;
+}
+
+#faq{
+    position: absolute;
+    left:852px;
+    top:76px;
+}
+
+#arrow{
+    position: absolute;
+    left:638px;
+    top:533px;
+}
+
+.chat-container {
+    width: 556px;
+    background-color: white;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 700px;
+    margin-left: 452px;
+    margin-bottom: 300px;
+}
+
+.chat-box {
+    height: 397px;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+input[type="text"] {
+    width: calc(100% - 75px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+button {
+    width: 50px;
+    border: none;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#bot2{
+    width: 692px;
+    margin-top: 800px;
+    display: flex;
+}

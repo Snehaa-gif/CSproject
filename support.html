@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help</title>
+    <link rel="stylesheet" href="support.css">
+    <style>
+        body {
+            background-color: #FEFFCC;
+        }
+    </style>
+</head>
+<body class="scrollable-page">
+    
+    <div>
+        <button class="back" type="button" onclick="window.location.href='file:///C:/Users/snehamanjuk/OneDrive/Desktop/project/website/Homepage.html';">Back</button>
+    </div>
+    <p id="support">SUPPORT</p>
+    <br>
+    <p id="short">Everything you need to know about the <i><b>product.</i></b></p>
+    <br>
+    <div id="img">
+        <img src="file:///C:/Users/snehamanjuk/Downloads/Untitled%20design%20-%202025-01-22T144448.358%201.svg" alt="image"/>
+    </div>
+    <br>
+    <p id="long">Chat with the bot for quick <br>research help and insights <br>anytime you need.</p>
+    <br>
+    <div id="faq">
+        <img src="file:///C:/Users/snehamanjuk/Downloads/Group%204.svg" alt="image"/>
+    </div>
+    <br>
+    <div id="arrow">
+        <img src="file:///C:/Users/snehamanjuk/Downloads/Arrow%201.svg" alt="arrow"/>
+    </div>
+    <br>
+
+    <!-- Chat area -->
+    <div class="boxx">
+    <div id="chat" style="border: 1px solid #ccc; color:black; height: 200px; overflow-y: scroll;"></div>
+    <input type="text" id="input" placeholder="Type your message here...">
+    <button id="button">Send</button>
+    </div>
+    <script>
+        // A simple chatbot that responds with some predefined answers in a random way
+        function chatbot(input) {
+            let output = "";
+            input = input.toLowerCase();
+
+            if (input.includes("hello") || input.includes("hi")) {
+                const greetings = [
+                    "Hello, nice to meet you!",
+                    "Hi there! How can I assist you today?",
+                    "Hey! What's up?",
+                ];
+                output = greetings[Math.floor(Math.random() * greetings.length)];
+            } else if (input.includes("how are you")) {
+                const status = [
+                    "I'm doing fine, thank you for asking.",
+                    "I'm great, just here to help!",
+                    "I'm doing well, how about you?",
+                ];
+                output = status[Math.floor(Math.random() * status.length)];
+            } else if (input.includes("what is your name")) {
+                const names = [
+                    "My name is Jarvis, I'm a chatbot.",
+                    "Call me Jarvis, your friendly chatbot!",
+                    "I go by Jarvis, nice to meet you!",
+                ];
+                output = names[Math.floor(Math.random() * names.length)];
+            } else if (input.includes("what can you do")) {
+                const capabilities = [
+                    "I can chat with you and answer some simple questions.",
+                    "I'm here to talk, tell jokes, and answer some of your questions.",
+                    "I can help with various tasks, chat with you, or tell jokes.",
+                ];
+                output = capabilities[Math.floor(Math.random() * capabilities.length)];
+            } else if (input.includes("tell me a joke")) {
+                const jokes = [
+                    "Why did the chicken go to the seance? To get to the other side.",
+                    "Why don’t skeletons fight each other? They don’t have the guts.",
+                    "I told my computer I needed a break, now it won’t stop sending me Kit-Kats.",
+                ];
+                output = jokes[Math.floor(Math.random() * jokes.length)];
+            } else {
+                const responses = [
+                    "Sorry, I don't understand that. Could you try asking something else?",
+                    "Hmm, I’m not sure about that. Can you ask me something else?",
+                    "I’m not familiar with that, but I can help with other things!",
+                ];
+                output = responses[Math.floor(Math.random() * responses.length)];
+            }
+            return output;
+        }
+
+        // Display the user message on the chat
+        function displayUserMessage(message) {
+            let chat = document.getElementById("chat");
+            let userMessage = document.createElement("div");
+            userMessage.classList.add("message");
+            userMessage.classList.add("user");
+            let userAvatar = document.createElement("div");
+            userAvatar.classList.add("avatar");
+            let userText = document.createElement("div");
+            userText.classList.add("text");
+            userText.innerHTML = message;
+            userMessage.appendChild(userAvatar);
+            userMessage.appendChild(userText);
+            chat.appendChild(userMessage);
+            chat.scrollTop = chat.scrollHeight;
+        }
+
+        // Display the bot message on the chat
+        function displayBotMessage(message) {
+            let chat = document.getElementById("chat");
+            let botMessage = document.createElement("div");
+            botMessage.classList.add("message");
+            botMessage.classList.add("bot");
+            let botAvatar = document.createElement("div");
+            botAvatar.classList.add("avatar");
+            let botText = document.createElement("div");
+            botText.classList.add("text");
+            botText.innerHTML = message;
+            botMessage.appendChild(botAvatar);
+            botMessage.appendChild(botText);
+            chat.appendChild(botMessage);
+            chat.scrollTop = chat.scrollHeight;
+        }
+
+        // Send the user message and get the bot response
+        function sendMessage() {
+            let input = document.getElementById("input").value;
+            if (input) {
+                displayUserMessage(input);
+                let output = chatbot(input);
+                setTimeout(function() {
+                    displayBotMessage(output);
+                }, 1000);
+                document.getElementById("input").value = "";
+            }
+        }
+
+        // Add a click event listener to the button
+        document.getElementById("button").addEventListener("click", sendMessage);
+
+        // Add a keypress event listener to the input
+        document.getElementById("input").addEventListener("keypress", function(event) {
+            if (event.keyCode == 13) {
+                sendMessage();
+            }
+        });
+    </script>
+
+</body>
+</html>

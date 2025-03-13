@@ -1,0 +1,171 @@
+/* Add font files for Helvetica Neue */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('C:\Users\snehamanjuk\Downloads\helvetica.zip') format('ttf'),
+         url('C:\Users\snehamanjuk\Downloads\helvetica.zip') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Add font files for Rische */
+  @font-face {
+    font-family: 'Rische';
+    src: url('C:\Users\snehamanjuk\Downloads') format('otf'),
+         url('C:\Users\snehamanjuk\Downloads') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  :root {
+    --font-family-helvetica-neue: 'Helvetica Neue', sans-serif;
+    --font-family-rische: 'Rische', sans-serif;
+  }
+  
+  
+  /* CSS Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .rectangle-91-3 {
+    position: absolute;
+    left: 363px;
+    top: 0px;
+    width: 1033px;
+    height: 832px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 45.12174606323242px;
+  }
+  
+  .text-4 {
+    position: absolute;
+    left: 62px;
+    top: 64px;
+    width: 254px;
+    height: 213px;
+    font-size: 34px;
+    font-family: var(--font-family-helvetica-neue);
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6899999976158142);
+  }
+  
+  .untitled-design-84-1-5 {
+    position: absolute;
+    left: -83px;
+    top: 227.697265625px;
+    width: 760px;
+    height: 760px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .bg-2 {
+    position: absolute;
+    left: -83px;
+    top: 0px;
+    width: 1479px;
+    height: 965.9034423828125px;
+  }
+  
+  .text-6 {
+    position: absolute;
+    left: 788px;
+    top: 221px;
+    width: 325px;
+    height: 77px;
+    border: 0.4000000059604645px solid rgba(0, 0, 0, 0.6899999976158142);
+    font-size: 78px;
+    font-family: var(--font-family-rische);
+    font-weight: normal;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6899999976158142);
+  }
+  
+  .text-8 {
+    font-size: 20px;
+    font-family: var(--font-family-helvetica-neue);
+    font-weight: 500;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6899999976158142);
+  }
+  
+  .line-26-9 {
+    border: 3px solid rgba(253, 255, 112, 1);
+  }
+  
+  .txt-em-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 13px;
+    padding: 0px 20px 0px 20px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    height: 29px;
+    border-radius: 60px;
+  }
+  
+  .text-11 {
+    font-size: 20px;
+    font-family: var(--font-family-helvetica-neue);
+    font-weight: 500;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6899999976158142);
+  }
+  
+  .line-27-12 {
+    border: 3px solid rgba(253, 255, 112, 1);
+  }
+  
+  .txt-pw-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 0px 23px 0px 23px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    height: 28px;
+    border-radius: 60px;
+  }
+  
+  .text-14 {
+    font-size: 25.998517990112305px;
+    font-family: var(--font-family-helvetica-neue);
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6899999976158142);
+  }
+  
+  .btn-13 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 17px 27px 17px 27px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    border: 1px solid rgba(253, 255, 112, 1);
+    border-radius: 60px;
+  }
+  
+  .credential-f-1 {
+    position: absolute;
+    left: -3364px;
+    top: 14244px;
+    width: 1280px;
+    height: 832px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgba(254, 255, 204, 1);
+  }

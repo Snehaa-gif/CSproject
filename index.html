@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_page</title>
+    <link rel="stylesheet" href="index.css">
+   <!-- <link rel="icon" type="image/jpg" href=""-->
+    
+    <style>
+        body {
+            background-color: #FEFFCC;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <b> 
+         <p id="quote">Creativity never</br>runs out.</p>
+        </b></div>
+    <!--rectangale-->
+   <div class="rectangle"></div>
+    <!--this is a quote-->
+   
+   <br/>
+   <!--image-->
+   <img src="file:///C:/Users/snehamanjuk/Downloads/Untitled%20design%20(84)%201.svg" alt="image1" height="1168.01" width="1168.01"/>
+   <br/>
+   <!--<br/>
+   <p id="login">LOGIN</p>
+   <br/>
+   <form>
+   
+        <input class="email" type="email" placeholder="Email:" required />  
+        <script>
+            function setCursorPosition(position) {
+                let input = document.getElementsByClassName("email")[0];
+                input.focus();
+                input.setSelectionRange(position, position);
+            }
+        
+            setCursorPosition(5); // Moves cursor to the 5th character
+        </script>    
+        <br/>
+        <input class="pw" type="password" placeholder="Password:" required />
+        <br/>
+        <button class="getstarted" type="button" onclick="window.location.href='file:///C:/Users/snehamanjuk/OneDrive/Desktop/project/website/Homepage.html';">GET STARTED 
+        </button>
+    -->
+
+    <br/>
+  <p id="login">LOGIN</p>
+  <br/>
+  <form action="Homepage.html" method="post">
+      
+       <input type="email" id="email" placeholder="Enter your Email ID" required>
+       <br>
+       <br/>
+      <input type="password" id="pw" placeholder="Enter your password" required>
+        <!--<input type="password" id="pw" placeholder="Enter your Password " minlength="8" maxlength="15"  pattern="^(?=.[A-Z])(?=.\d)(?=.[@$!%?&])[A-Za-z\d@$!%*?&]{8,15}$" 
+       title="Password must be 8-15 characters long, include at least one uppercase letter, one number, and one special character (@$!%*?&)."required>
+       <br>-->
+       <br/>
+       <button type="submit" class="getstarted">Login</button>
+       <input type="reset" class="reset">
+
+   </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.scrollable-page {
+    height: 100%; /* or min-height: 100vh; */
+    overflow-y: auto; /* Only this page will scroll vertically */
+}
+
+.rectangle {
+    width: 1278px;
+    height: 637px;
+    /* margin-left: 400px; */
+    background-color: white;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 69.35px;
+    border-top-left-radius: 69.35px;
+    position: absolute;
+    left: 211px;
+    top: 46px;
+    display: inline-block;
+    box-shadow: -1px 0px 18px 10px #BFBFBF;
+}
+
+.back{
+    width: 107.36px;
+    height: 40.15px;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    border: 1px solid rgb(206, 196, 7);
+    border-radius: 72.62px;
+    background-color: rgb(206, 196, 7);
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: helvetica;
+    color: #4f4f4f;
+}

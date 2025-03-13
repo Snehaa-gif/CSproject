@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postdata</title>
+    <link rel="stylesheet" href="postdata.css">
+    <style>
+        body{
+            background-color:  #FEFFCC;
+         }
+    </style>
+</head>
+<body>
+    <span id="text">
+        <h1>Place It Here, Find It Anytime!</h1>
+        <p>Efficiently save your favorite Instagram trends and access them anytime. </p>
+    </span>
+    <img id="image" src="file:///C:/Users/snehamanjuk/Downloads/Group%2011.svg" alter="shape">
+
+    <div id="form">
+    <select id="category" name="filter">
+        <option value="" disabled selected>Category:</option>
+        <optgroup label="Hair Braiding" >
+            <option value="option1">Braids</option>
+            <option value="option2">Locs</option>
+            <option value="option3">Twists</option>
+            <option value="option4">Maintenance/Aftercare</option>
+        </optgroup>
+     
+        <optgroup label="Body Sculpting" >
+            <option value="option1">Coolsculpting</option>
+            <option value="option2">Radio Freq</option>
+            <option value="option2">Ultrasound Cavitation</option>
+            <option value="option2">Laser Lipo</option>
+            <option value="option2">EMSculpt</option>
+            <option value="option2">Cryotherapy</option>
+        </optgroup>
+     
+     
+     <optgroup label="Hair salon">
+            <option value="option1">Haircuts and Styling</option>
+            <option value="option2">Hair Coloring</option>
+            <option value="option2">Hair Treatments</option>
+            <option value="option2">Styling Services</option>
+            <option value="option2">Extensions and Add-Ons</option>
+            <option value="option2">Mens Grooming</option>
+        </optgroup>
+    
+    
+     <optgroup label="Facial Service">
+            <option value="option1">Microblading</option>
+            <option value="option2">Hydrafacial</option>
+            <option value="option3">Facial</option>
+            <option value="option4">Dermaplaning</option>
+            <option value="option5">LED Light Therapy</option>
+            <option value="option6">Men's Grooming</option>
+            <option value="option7">Microneedling</option>
+            <option value="option8">Threading</option>
+            <option value="option8">Chemical Peel</option>
+        </optgroup>
+    
+    
+        <optgroup label="Nail salon">
+            <option value="option1">Manicures</option>
+            <option value="option2">Pedicures</option>
+            <option value="option2">Nail Enhancements</option>
+            <option value="option2">Nail Treatments</option>
+            <option value="option2">Nail Art and Design</option>
+        </optgroup>
+     
+     
+        <optgroup label="Medical Spa">
+            <option value="option1">Injection Treatment</option>
+            <option value="option2">Botox</option>
+            <option value="option3">Body Contouring</option>
+            <option value="option4">Fillers</option>
+            <option value="option5">Counseling</option>
+        </optgroup>   
+     
+     
+        <optgroup label="Massage">
+            <option value="option1">Swedish</option>
+            <option value="option2">Deep Tissue</option>
+            <option value="option3">Hot stone</option>
+            <option value="option4">Aromatherapy</option>
+            <option value="option5">Reflexology</option>
+            <option value="option6">Prenatal</option>
+            <option value="option7">Cupping</option>
+            <option value="option">Lymphatic Drainage</option>
+     
+     
+        </optgroup>   
+     </select>
+    </br>
+     
+     <!--POST TYPE-->
+     <select id="posttype" name="filter">
+        <option value="" disabled selected>Post type:</option>
+        <option value="option1">Static Post</option>
+        <option value="option2">Carousel</option>
+        <option value="option3">Reel</option>
+     </select>
+     
+    </br>
+     
+     
+     <!--CONTENT TYPE-->
+     <select id="contenttype" name="filter">
+        <option value="" disabled selected>Content type:</option>
+            <option value="option1">Informational</option>
+            <option value="option2">Promotional</optio">
+            <option value="option3">Testimonial</option>
+            <option value="option4">Breathers</option>
+            <option value="option5">Work Display</option>
+            <option value="option6">Meme</option>
+            <option value="option7">Interactive</option>
+    </select>
+</br>
+<!--POST REF-->
+<input type="url" id="link" name="ref-link" placeholder="Ref link" required>
+</br>
+ <!--go back button-->
+ <button class="back" type="button" onclick="window.location.href='file:///C:/Users/snehamanjuk/OneDrive/Desktop/project/website/Inspiration1.html';">Back
+</button>
+</br> 
+<button id="save" onclick="showSavedAlert()">Save</button>
+
+<script>
+  function showSavedAlert() {
+    alert("Saved!");
+  }
+</script>
+</div>
+</body>
+</html>

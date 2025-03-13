@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style for the dialog */
+        dialog {
+            border: solid 2px #333;
+            padding: 20px;
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+     <!-- Button to open the dialog -->
+     <button id="openDialogBtn">Open Dialog</button>
+
+     <!-- The dialog box -->
+     <dialog id="myDialog">
+         <h2>Dialog Box</h2>
+         <p>This is a simple dialog box example.</p>
+         <button id="closeDialogBtn">Close</button>
+     </dialog>
+ 
+     <script>
+         // Get elements
+         const openDialogBtn = document.getElementById('openDialogBtn');
+         const closeDialogBtn = document.getElementById('closeDialogBtn');
+         const dialog = document.getElementById('myDialog');
+ 
+         // Open the dialog when the button is clicked
+         openDialogBtn.addEventListener('click', () => {
+             dialog.showModal();
+         });
+ 
+         // Close the dialog when the close button is clicked
+         closeDialogBtn.addEventListener('click', () => {
+             dialog.close();
+         });
+     </script>
+</body>
+</html>

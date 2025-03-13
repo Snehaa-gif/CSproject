@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.logo{
+   object-fit: cover;
+  position:absolute;
+  top:-59px;
+  left:-7px;
+  height:41px;
+  width:142px;
+}
+
+.inspiration{
+    width: 202px;
+    height: 56px;
+    position: absolute;
+    left: 821px;
+    top: 56px;
+    background-color: #FEFFCC;
+    border-radius: 60px;
+    border: 3px solid #fdff70;
+    font-size: 22px;
+    color: #4f4f4f;
+}
+
+.help{
+    width: 109px;
+    height: 56px;
+    position: absolute;
+    left: 1383px;
+    top: 56px;
+    background-color: #FEFFCC;
+    border-radius: 60px;
+    border: 3px solid #fdff70;
+    font-size: 22px;
+    color: #4f4f4f;
+}
+
+.client_specifications{
+    width: 296px;
+    height: 56px;
+    position: absolute;
+    left: 1059px;
+    top: 56px;
+    background-color: #FEFFCC;
+    border-radius: 60px;
+    border: 3px solid #fdff70;
+    font-size: 22px;
+    color: #4f4f4f;
+}
+
+.rec1{
+    height: 575.47px;
+    width: 381.85px;
+    position:absolute;
+    left: 1105.15px;
+    top: 134px;
+    border-radius:25px;
+    display:inline-block;
+}
+
+.rec2{
+    height: 575.47px;
+    width: 381.85px;
+    position:absolute;
+    left: 779.15px;
+    top: 450px;
+    border-radius:25px;
+    display:inline-block;
+}
+
+.rec3{
+    height: 575.47px;
+    width: 381.85px;
+    position:absolute;
+    left: 781.15px;
+    top: 134px;
+    border-radius:25px;
+    display:inline-block;
+}
+
+.rec4{
+    height: 502px;
+    width: 428px;
+    position:absolute;
+    left: 338px;
+    top: 251px;
+    border-radius:25px;
+    display:inline-block;
+}
+
+.rec5{
+    height: 502px;
+    width: 428px;
+    position:absolute;
+    left: 15px;
+    top: 452px;
+    border-radius:25px;
+    display:inline-block;
+}
+
+h1{
+    font-size: 59.34px;
+    font-family: serif;
+    text-align: left;
+    position:absolute;
+    left:38px;
+    top:50px;
+    font-weight: lighter;
+    color:#4f4f4f;
+}
+
+p{
+    font-size: 25.34px;
+    font-family:Helvetica, sans-serif;
+    text-align: left;
+    position:absolute;
+    left:40px;
+    top:230px;
+    font-weight: lighter;
+    color:#4f4f4f;
+}

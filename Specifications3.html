@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="specifications3.css">
+    <style>
+        body {
+            background-color: #FEFFCC;
+        }
+    </style>
+    <style>
+        /* Style for the dialog */
+        dialog {
+            border: solid 2px #333;
+    padding: 20px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Prevents scrolling */
+        }
+
+        button {
+            padding: 10px 20px;
+    background-color: #feffcc;
+    color: white;
+    border: 1px solid rgb(206, 196, 7);
+    border-radius: 23px;
+    cursor: pointer;
+    position: absolute;
+    top: 620px;
+    left: 704px;
+    font-family: helvetica;
+    font-size: 20px;
+    color: #4f4f4f;
+    width: 107px;
+    text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <!--image-->
+   <img class="img" src="file:///C:/Users/snehamanjuk/Downloads/Untitled%20design%20(85)%201.svg" height="250">
+</br>   
+   
+    <!--rectangle-->
+   <div>
+    <img class="rec" src="file:///C:/Users/snehamanjuk/Downloads/Rectangle%2093.svg" />
+   </div>
+</br>
+    <!--go back button-->
+    <button class="back" type="button" onclick="window.location.href='file:///C:/Users/snehamanjuk/OneDrive/Desktop/project/website/Specifications1.HTML';">Back
+    </button>
+</br> 
+    <p class="note">Enter the business name, media link, and specifications for your client. </br>Click "Create" to save and organize their details efficiently.</p>
+</br>
+   <!--biz name text box-->
+   <form>
+       
+    <input class="biz" type="text" placeholder="Biz name:"> 
+    
+</form>
+</br>
+
+<label for="drive-link">Enter Google Drive Link:</label>
+<input type="url" id="drive-link" name="drive-link" placeholder="Media link: https://drive.google.com/..." required>
+
+</br>
+
+<!--specifications text box-->
+<form>
+       
+    <input class="specification" type="text" placeholder="Write the specifications"> 
+    
+</form>
+</br>
+ <!--save
+ <button class="save" type="button" onclick="window.location.href='file:///C:/Users/snehamanjuk/OneDrive/Desktop/project/website/dialog.html';" >Save </button>
+</br>-->
+
+<button onclick="showSavedAlert()">Save</button>
+
+<script>
+  function showSavedAlert() {
+    alert("Saved!");
+  }
+</script>
+
+</body>
+</html>
